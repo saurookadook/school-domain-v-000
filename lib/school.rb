@@ -30,9 +30,11 @@ class School
     @roster.values.sort.each do |grade_key|
       @sorted_roster[grade_key] = []
     end
-    if @sorted_roster[grade_key] == @roster[grade_key]
-      @sorted_roster[grade_key] << @roster[grade_key]
-      @sorted_roster[grade_key].sort
+    @sorted_roster.each do |grade_key, students|
+      if @sorted_roster[grade_key] == @roster[grade]
+        @sorted_roster[grade] << @roster[grade]
+        @sorted_roster[grade].sort
+      end
     end
   end
 
