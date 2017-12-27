@@ -32,7 +32,9 @@ class School
       # binding.pry
       @roster.each do |grade_num, students_array|
         if grade_num == grade_key
-          @sorted_roster[grade_key] << students_array.sort
+          students_array.sort.each do |student_name|
+            @sorted_roster[grade_key] << student_name
+          end
         end
       end
     end
