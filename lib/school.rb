@@ -13,12 +13,13 @@ class School
 
   def add_student(name, grade)
     # binding.pry
-    if !(@roster.has_key?(grade))
-      @roster[grade] = []
-      @roster[grade] << name
-    else
-      @roster[grade] << name
-    end
+    @roster[grade] = name
+    # if !(@roster.has_key?(grade))
+    #   @roster[grade] = []
+    #   @roster[grade] << name
+    # else
+    #   @roster[grade] << name
+    # end
   end
 
 
