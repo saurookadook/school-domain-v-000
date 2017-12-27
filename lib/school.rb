@@ -27,7 +27,7 @@ class School
 
   def sort
     sorted_roster = {}
-    @roster.sort_by {|k, v| k}.each do |grade|
+    @roster.values.sort.each do |grade|
       sorted_roster[grade] = []
     end
   end
