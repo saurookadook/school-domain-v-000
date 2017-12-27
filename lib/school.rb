@@ -1,19 +1,21 @@
 class School
 
+  ROSTER = {}
+
   def initialize(name)
     @name = name
   end
 
   def roster
-    @roster = {}
+    ROSTER
   end
 
   def add_student(name, grade)
-    if !(@roster.has_key?(grade))
-      @roster[grade] = []
-      @roster[grade] << name
+    if !(ROSTER.has_key?(grade))
+      ROSTER[grade] = []
+      ROSTER[grade] << name
     else
-      @roster[grade] << name
+      ROSTER[grade] << name
     end
   end
 
