@@ -30,6 +30,8 @@ class School
     @roster.keys.sort.each do |grade_key|
       @sorted_roster[grade_key] = []
     end
+
+    @sorted_roster = {}
     # @roster.values.sort.each do |grade_key|
     #   @sorted_roster[grade_key] = []
     # end
