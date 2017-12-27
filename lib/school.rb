@@ -34,6 +34,7 @@ class School
         if grade_num == grade_key
           @sorted_roster[grade_key] << students_array.sort
         end
+        end
       end
     end
 
