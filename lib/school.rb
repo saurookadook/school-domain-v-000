@@ -31,6 +31,7 @@ class School
       @sorted_roster[grade_key] = []
     end
     @sorted_roster.each do |grade_key, students|
+      binding.pry
       if @sorted_roster[grade_key] == @roster[grade]
         @sorted_roster[grade_key] << @roster[grade]
         @sorted_roster[grade_key].sort
