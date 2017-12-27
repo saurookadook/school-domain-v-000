@@ -29,7 +29,12 @@ class School
     @sorted_roster = {}
     @roster.keys.sort.each do |grade_key|
       @sorted_roster[grade_key] = []
-      binding.pry
+      # binding.pry
+      @roster.each do |grade_num, students_array|
+        if grade_num == grade_key
+          @sorted_roster[grade_key] << students_array.sort
+        end
+      end
     end
 
     @sorted_roster
