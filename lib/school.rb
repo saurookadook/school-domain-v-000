@@ -10,5 +10,9 @@ class School
     ROSTER
   end
 
+  def add_student(name, grade)
+    ROSTER[name] = grade
+  end
+
 
 end
