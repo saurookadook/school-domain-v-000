@@ -30,6 +30,9 @@ class School
     @roster.values.sort.each do |grade|
       @sorted_roster[grade] = []
     end
+    if @sorted_roster[grade] == @roster[grade]
+      @sorted_roster[grade] << @roster[grade]
+      @sorted_roster[grade].sort
   end
 
 end
