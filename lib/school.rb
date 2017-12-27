@@ -29,9 +29,10 @@ class School
     @sorted_roster = {}
     @roster.keys.sort.each do |grade_key|
       @sorted_roster[grade_key] = []
+      @roster.values
     end
 
-    @sorted_roster = {}
+    @sorted_roster
     # @roster.values.sort.each do |grade_key|
     #   @sorted_roster[grade_key] = []
     # end
