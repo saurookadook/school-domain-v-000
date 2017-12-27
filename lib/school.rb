@@ -31,7 +31,7 @@ class School
       @sorted_roster[grade_key] = []
       binding.pry
     end
-    
+
     @sorted_roster
     # @roster.values.sort.each do |grade_key|
     #   @sorted_roster[grade_key] = []
