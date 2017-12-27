@@ -33,6 +33,9 @@ class School
     if @sorted_roster[grade] == @roster[grade]
       @sorted_roster[grade] << @roster[grade]
       @sorted_roster[grade].sort
+    else
+    end
+
   end
 
 end
