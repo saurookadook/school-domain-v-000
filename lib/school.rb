@@ -33,7 +33,7 @@ class School
     @sorted_roster.each do |grade_key, students|
       if @sorted_roster[grade_key] == @roster[grade]
         @sorted_roster[grade_key] << @roster[grade]
-        @sorted_roster[grade].sort
+        @sorted_roster[grade_key].sort
       end
     end
   end
