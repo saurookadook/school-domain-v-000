@@ -27,9 +27,9 @@ class School
 
   def sort
     @sorted_roster = {}
-    @roster.values.sort.each do |grade_key|
-      @sorted_roster[grade_key] = []
-    end
+    # @roster.values.sort.each do |grade_key|
+    #   @sorted_roster[grade_key] = []
+    # end
     # @sorted_roster.each do |grade_key, students|
     #   if @sorted_roster[grade_key] == @roster[grade]
     #     @sorted_roster[grade_key] << @roster[grade]
